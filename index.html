@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * index.html
+         *
+         * Keep it simple.
+         * View Source encouraged.
+		 *               Keep it weird.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .nav a {
+            display: inline-block;
+            margin-bottom: 0.25em;
+        }
+
+        #uptime {
+            white-space: nowrap;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                         EST. 1995                            |
++--------------------------------------------------------------+
+
+SYSTEM STATUS : ONLINE
+DISPLAY       : AMBER MONOCHROME
+UPLINK        : AVAILABLE
+TRUST LEVEL   : QUESTIONABLE
+
+SYSTEM UPTIME : <span id="uptime">SINCE 01 APR 1995</span>
+
+<span class="dim">---------------------------------------------------------------</span>
+
+root@snakepit:~# ./welcome
+
+BUILDING SOLUTIONS THAT BITE.
+</pre>
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+MESSAGE OF THE DAY
+
+  Welcome to Snakepit Industries.
+
+  This site contains projects, experiments, archives,
+  obsolete technology, questionable engineering, and
+  whatever else followed us home.
+
+  Browse freely.
+
+  Break nothing.
+
+  If something is already broken, please document it.
+
+</pre>
+</section>
+<!--
+<marquee> has finished its smoke and entered the chat.
+-->
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+<marquee scrollamount="4">
+*** SNAKEPIT INDUSTRIES // SYSTEM ONLINE // KEEP IT WEIRD // ***
+</marquee>
+
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+<!--
+    Yes, <marquee> is deprecated.
+
+    It knows what it did.
+-->
+<section class="section nav">
+<pre>
+[01] <a href="about.html">ABOUT</a>
+[02] <a href="projects.html">PROJECTS</a>
+[03] <a href="lab.html">LAB</a>
+[04] <a href="archive.html">ARCHIVE</a>
+[05] <a href="links.html">LINKS</a>
+[06] <a href="contact.html">CONTACT</a>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+CURRENT PROJECTS
+
+  &gt; CHEZDEELISE ............ LOCAL AI / BUILDEROS
+  &gt; XOPR ................... WATCHMAN TERMINAL
+  &gt; SONAR .................. RF SITUATIONAL AWARENESS
+  &gt; WIG FLASHREP ........... OSINT REPORTING
+  &gt; NIGHTRIDER ............. MOBILE NODE
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+<!--
+    Netscape Navigator 3.0 recommended.
+
+    Internet Explorer users may continue
+    at their own risk.
+
+    Lynx users already know what they're doing.
+-->
+<section class="section">
+<pre>
+SITE INFORMATION
+
+  VERSION ................. 0.1
+  LAST UPDATED ............ 24 AUG 2026
+  JAVASCRIPT .............. BARELY
+  COOKIES ................. NONE
+  TRACKING ................ NOOO, THAT'S THE FEDBOIS
+  SOCIAL MEDIA ............ STILL A WEBSITE
+  BEST VIEWED WITH ........ NETSCAPE NAVIGATOR 3.0
+  RESOLUTION .............. 800x600
+  COLOR DEPTH ............. 256 COLORS
+  MODEM ................... 28.8K OR BETTER
+
+<span class="dim">---------------------------------------------------------------</span>
+<!--
+    This website requires 256 colors.
+
+    It uses two of them.
+
+    Do not question the system requirements.
+-->
+</pre>
+</section>
+<!-- 
+If you get lost, please apply dead reckoning and maneuver towards the BOOP! 
+-->
+<section class="section">
+<pre>
+root@snakepit:~# <span class="cursor"></span>
+</pre>
+</section>
+<!--
+    254 colors reserved for future expansion.
+-->
+</main>
+
+
+<script>
+/*
+ * Snakepit uptime
+ *
+ * Epoch:
+ * 01 APR 1995
+ *
+ * No explanation provided.
+ */
+
+(function () {
+
+    /*
+     * Treat the Snakepit epoch as a calendar date rather
+     * than tying it to a historical daylight-saving offset.
+     */
+    const epoch = new Date(1995, 3, 1, 0, 0, 0);
+
+    const output = document.getElementById("uptime");
+
+    function updateUptime() {
+
+        const now = new Date();
+
+        let years = now.getFullYear() - epoch.getFullYear();
+
+        const anniversary = new Date(
+            now.getFullYear(),
+            epoch.getMonth(),
+            epoch.getDate(),
+            epoch.getHours(),
+            epoch.getMinutes(),
+            epoch.getSeconds()
+        );
+
+        if (now < anniversary) {
+            years--;
+        }
+
+        const lastAnniversary = new Date(
+            epoch.getFullYear() + years,
+            epoch.getMonth(),
+            epoch.getDate(),
+            epoch.getHours(),
+            epoch.getMinutes(),
+            epoch.getSeconds()
+        );
+
+        let seconds = Math.floor(
+            (now - lastAnniversary) / 1000
+        );
+
+        const days = Math.floor(seconds / 86400);
+        seconds %= 86400;
+
+        const hours = Math.floor(seconds / 3600);
+        seconds %= 3600;
+
+        const minutes = Math.floor(seconds / 60);
+        seconds %= 60;
+
+        output.textContent =
+            String(years).padStart(2, "0") + "Y " +
+            String(days).padStart(3, "0") + "D " +
+            String(hours).padStart(2, "0") + "H " +
+            String(minutes).padStart(2, "0") + "M " +
+            String(seconds).padStart(2, "0") + "S";
+    }
+
+    updateUptime();
+    setInterval(updateUptime, 1000);
+
+})();
+</script>
+
+
+<!--
+    SNAKEPIT INDUSTRIES
+    EST. 1995
+
+    SOMEONE SET UP US THE BOMB.
+
+    Complexity should have to justify its existence.
+-->
+
+</body>
+</html>

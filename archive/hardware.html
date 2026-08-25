@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: Hardware</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * archive/hardware.html
+         *
+         * If it still powers on,
+         * it still has a vote.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                     HARDWARE ARCHIVE                         |
++--------------------------------------------------------------+
+
+root@snakepit:~/archive# ./inventory --hardware
+
+<span class="dim">---------------------------------------------------------------</span>
+
+ARCHIVE STATUS : OPEN
+HARDWARE       : TOO MUCH
+KNOWN WORKING  : SOME
+KNOWN BROKEN   : SOME
+UNKNOWN        : CONCERNINGLY LARGE CATEGORY
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+ABOUT THIS DIRECTORY
+
+This directory documents physical computing and electronics
+hardware associated with the Snakepit.
+
+Potential contents include:
+
+  &gt; COMPUTERS
+  &gt; SINGLE-BOARD COMPUTERS
+  &gt; MICROCONTROLLERS
+  &gt; RADIOS
+  &gt; SDR HARDWARE
+  &gt; NETWORK EQUIPMENT
+  &gt; POWER SYSTEMS
+  &gt; STORAGE DEVICES
+  &gt; TEST EQUIPMENT
+  &gt; INTERFACES
+  &gt; LEGACY HARDWARE
+  &gt; THINGS FOUND IN BOXES WITH NO EXPLANATION
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+HARDWARE INDEX
+
+No public inventory entries currently indexed.
+
+Future records may include:
+
+  [SYS] COMPUTERS
+  [NET] NETWORK EQUIPMENT
+  [RF ] RADIO / SDR
+  [DEV] EMBEDDED HARDWARE
+  [PWR] POWER
+  [STO] STORAGE
+  [TST] TEST EQUIPMENT
+  [LEG] LEGACY SYSTEMS
+  [UNK] WHAT THE HELL IS THIS
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# cat hardware/METADATA.txt
+
+HARDWARE RECORD FORMAT
+
+DEVICE:
+MANUFACTURER:
+MODEL:
+SERIAL:
+APPROXIMATE DATE:
+CATEGORY:
+INTERFACE:
+POWER:
+CONDITION:
+STATUS:
+SOURCE:
+ACQUIRED:
+LAST TESTED:
+DOCUMENTATION:
+PHOTOS:
+NOTES:
+
+Unknown fields should remain:
+
+UNKNOWN
+
+Guessing does not improve the inventory.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+STATUS FLAGS
+
+  [ONLINE]  CURRENTLY OPERATIONAL
+  [TEST]    FUNCTIONALITY UNDER TEST
+  [REPAIR]  REPAIR / RESTORATION REQUIRED
+  [PARTS]   COMPONENT DONOR
+  [STORE]   STORED / NOT CURRENTLY DEPLOYED
+  [UNK]     CONDITION UNKNOWN
+  [DEAD]    RELEASED THE MAGIC SMOKE PERMANENTLY
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# ./identify device
+
+CONNECTING...
+
+POWER ................. UNKNOWN
+INTERFACE ............. DB-25
+LABEL .................. MISSING
+CASE ................... YELLOWED
+WEIGHT ................. SUSPICIOUS
+MANUAL .................. NO
+MEMORY OF BUYING IT .... NO
+
+IDENTIFICATION:
+
+PROBABLY IMPORTANT.
+
+ACTION:
+
+PUT IT BACK IN THE BOX.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+LEGACY HARDWARE
+
+Age alone is not a failure condition.
+
+A machine may remain useful because it is:
+
+  &gt; RELIABLE
+  &gt; REPAIRABLE
+  &gt; WELL DOCUMENTED
+  &gt; INTERFACE-RICH
+  &gt; OFFLINE CAPABLE
+  &gt; PURPOSE BUILT
+  &gt; INTERESTING
+  &gt; ALREADY PAID FOR
+
+"OLD" and "USELESS" are not synonyms.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+STORAGE RECOVERY
+
+Old storage hardware may be inventoried separately from the
+data recovered from it.
+
+Typical workflow:
+
+  [01] IDENTIFY MEDIA.
+
+  [02] DOCUMENT CONDITION.
+
+  [03] AVOID UNNECESSARY WRITES.
+
+  [04] IMAGE WHEN PRACTICAL.
+
+  [05] HASH THE IMAGE.
+
+  [06] EXPLORE A COPY.
+
+  [07] CATALOG INTERESTING ARTIFACTS.
+
+  [08] PUT THE DRIVE SOMEWHERE "SAFE."
+
+  [09] IMMEDIATELY FORGET WHICH SAFE PLACE WAS USED.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+root@snakepit:~/archive# ./hardware-test --all
+
+TESTING...
+
+device01 ............. PASS
+device02 ............. FAIL
+device03 ............. PASS
+device04 ............. NO RESPONSE
+device05 ............. MAKES NOISE
+device06 ............. GETTING WARM
+device07 ............. WHY IS THAT LED BLINKING
+device08 ............. ABORTED
+
+SUMMARY:
+
+3 DEVICES FUNCTIONAL.
+2 DEVICES QUESTIONABLE.
+3 DEVICES REQUIRE ADULT SUPERVISION.
+
+root@snakepit:~/archive# whoami
+
+ACCESS DENIED.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+HARDWARE PHILOSOPHY
+
+Use the right tool.
+
+Understand the interfaces.
+
+Keep the documentation.
+
+Repair what makes sense to repair.
+
+Preserve what deserves preservation.
+
+And never throw away a weird adapter until you are absolutely
+certain what it does.
+
+Then wait another five years.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# ls adapters/
+
+serial/
+parallel/
+usb/
+coax/
+audio/
+power/
+unknown/
+unknown2/
+unknown_final/
+unknown_final_REAL/
+
+root@snakepit:~/archive# _
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+[ <a href="../archive.html">RETURN TO ARCHIVE</a> ]
+[ <a href="../index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~/archive# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    Never discard an adapter.
+
+    The moment you do,
+    the device requiring it will reappear.
+
+    This is not superstition.
+
+    It is inventory physics.
+-->
+
+</body>
+</html>

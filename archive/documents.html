@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: Documents</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * archive/documents.html
+         *
+         * Read the documentation.
+         * Yes, we know what we just said.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                    DOCUMENT ARCHIVE                          |
++--------------------------------------------------------------+
+
+root@snakepit:~/archive# ls -lah ./documents/
+
+<span class="dim">---------------------------------------------------------------</span>
+
+ARCHIVE STATUS : OPEN
+DOCUMENTS      : 0
+PAPERLESS      : ABSOLUTELY NOT
+FILING SYSTEM  : EVOLVING
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+ABOUT THIS DIRECTORY
+
+This directory contains reference and archival documents.
+
+Potential contents include:
+
+  &gt; MANUALS
+  &gt; DATASHEETS
+  &gt; SPECIFICATIONS
+  &gt; TECHNICAL NOTES
+  &gt; SCHEMATICS
+  &gt; HISTORICAL DOCUMENTS
+  &gt; RECOVERED TEXT FILES
+  &gt; SCANNED HARDCOPY
+  &gt; DOT-MATRIX PRINTED MATERIAL
+  &gt; DOCUMENTS WHOSE ORIGINAL PURPOSE HAS BEEN FORGOTTEN
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+DOCUMENT INDEX
+
+No public documents currently indexed.
+
+ARCHIVE STATUS:
+
+WAITING FOR THE ARCHAEOLOGISTS.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# cat documents/METADATA.txt
+
+ARCHIVAL METADATA
+
+DOCUMENT:
+ORIGINAL FILENAME:
+DATE:
+DATE CONFIDENCE:
+SOURCE:
+MEDIA:
+FORMAT:
+SIZE:
+HASH:
+RECOVERED:
+DIGITIZED:
+CONDITION:
+TRANSCRIPT:
+NOTES:
+
+Unknown information should be recorded as:
+
+UNKNOWN
+
+Not:
+
+"PROBABLY SOMETHING LIKE..."
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+PRESERVATION POLICY
+
+  [01] PRESERVE ORIGINAL FILES.
+
+  [02] PRESERVE ORIGINAL FILENAMES WHEN PRACTICAL.
+
+  [03] PRESERVE FILE TIMESTAMPS WHEN RECOVERABLE.
+
+  [04] HASH ORIGINAL DIGITAL ARTIFACTS.
+
+  [05] IDENTIFY MODIFIED OR CONVERTED COPIES.
+
+  [06] SCANS SHOULD REPRESENT THE ORIGINAL DOCUMENT.
+
+  [07] TRANSCRIPTS SHOULD NOT REPLACE ORIGINAL SCANS.
+
+  [08] DAMAGE, CORRUPTION, AND MISSING DATA ARE PART OF
+       THE ARCHIVAL RECORD.
+
+  [09] DON'T CLEAN HISTORY UNTIL IT LOOKS NEW.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+HARDCOPY DIGITIZATION
+
+Original printed material may be presented as:
+
+  [IMG] ORIGINAL SCAN
+  [TXT] TRANSCRIPT
+  [PDF] DOCUMENT COPY
+  [RAW] SOURCE IMAGE
+
+When available, physical characteristics may also be recorded:
+
+  &gt; PRINT METHOD
+  &gt; PAPER TYPE
+  &gt; HANDWRITTEN NOTES
+  &gt; DAMAGE
+  &gt; FOLDING
+  &gt; DISCOLORATION
+  &gt; TRACTOR-FEED EDGES
+
+Coffee stains remain coffee stains.
+
+They are not image defects.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+root@snakepit:~/archive# ./restore scan001.png
+
+SOURCE ............... DOT MATRIX
+CONTRAST ............. TERRIBLE
+PAPER ................. YELLOWED
+EDGE .................. TORN
+HANDWRITING ........... PRESENT
+COFFEE STAIN .......... PROBABLE
+
+AUTO-ENHANCE? [y/N] n
+
+GOOD.
+
+THE DOCUMENT IS OLD.
+
+THAT'S THE POINT.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+DIGITAL RECOVERY
+
+Recovered media may include:
+
+  &gt; 3.5" FLOPPY DISKS
+  &gt; HARD DISK DRIVES
+  &gt; OPTICAL MEDIA
+  &gt; FLASH STORAGE
+  &gt; BACKUP ARCHIVES
+  &gt; UNKNOWN MEDIA FOUND IN BOXES
+
+Original media should be treated as evidence.
+
+Image first.
+
+Explore copies.
+
+Document everything.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# find /storage -name "manual.pdf"
+
+find: searching...
+
+find: searching...
+
+find: searching...
+
+./box_04/misc/old/more_old/stuff/manual.pdf
+
+root@snakepit:~/archive# echo $DOCUMENTATION
+
+IT WAS HERE THE WHOLE TIME.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+ARCHIVAL NOTE
+
+Old information is not automatically correct.
+
+New information is not automatically better.
+
+Preservation answers:
+
+"WHAT DID THE RECORD SAY?"
+
+It does not automatically answer:
+
+"WAS THE RECORD RIGHT?"
+
+Those are different questions.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+[ <a href="../archive.html">RETURN TO ARCHIVE</a> ]
+[ <a href="../index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~/archive# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    Somewhere there is a manual explaining exactly
+    how this machine works.
+
+    It is in a safe place.
+
+    Nobody remembers where the safe place is.
+-->
+
+</body>
+</html>

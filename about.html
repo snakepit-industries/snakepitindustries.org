@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: About</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * about.html
+         *
+         * Information is not knowledge.
+         * Keep it weird.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                       ABOUT SYSTEM                           |
++--------------------------------------------------------------+
+
+root@snakepit:~# cat /etc/snakepit/about
+
+SNAKEPIT INDUSTRIES
+EST. 1995
+
+Snakepit Industries is an independent workshop for hardware,
+software, electronics, communications, experimental systems,
+and other things that seemed like a good idea at the time.
+
+We build things.
+
+We break things.
+
+Occasionally, we determine why they broke.
+
+Then we build better things.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+OPERATING PRINCIPLES
+
+  [01] BUILD IT.
+  [02] TEST IT.
+  [03] BREAK IT.
+  [04] UNDERSTAND IT.
+  [05] BUILD IT BETTER.
+
+Complexity should have to justify its existence.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+AREAS OF INTEREST
+
+  &gt; COMPUTING
+  &gt; ELECTRONICS
+  &gt; RADIO / RF
+  &gt; NETWORKING
+  &gt; CYBERSECURITY
+  &gt; ARTIFICIAL INTELLIGENCE
+  &gt; EMBEDDED SYSTEMS
+  &gt; LEGACY HARDWARE
+  &gt; QUESTIONABLE ENGINEERING
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~# whoami
+
+ACCESS DENIED.
+
+root@snakepit:~# _
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+[ <a href="index.html">RETURN TO ROOT</a> ]
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    No biography found.
+
+    This is a feature, not a bug.
+-->
+
+</body>
+</html>

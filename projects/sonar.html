@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: Sonar</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * projects/sonar.html
+         *
+         * Listen first.
+         * Transmit only when you mean it.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                          SONAR                               |
++--------------------------------------------------------------+
+
+root@snakepit:~/projects# ./sonar --status
+
+PROJECT        : SONAR
+STATUS         : DEVELOPMENT
+TYPE           : PASSIVE RF SITUATIONAL AWARENESS
+ROLE           : OBSERVE / LOG / CORRELATE
+TRANSMIT       : NO
+PRIVACY MODE   : REQUIRED
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+OVERVIEW
+
+SONAR is an experimental passive radio-frequency awareness
+system.
+
+The concept is simple:
+
+Observe nearby RF activity.
+
+Record only what is necessary.
+
+Correlate changes over time.
+
+Build situational awareness without becoming the problem.
+
+Think of it as:
+
+WARDIVING IN REVERSE.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+PRIMARY GOALS
+
+  &gt; PASSIVE RF OBSERVATION
+  &gt; LOCAL SIGNAL AWARENESS
+  &gt; DEVICE-PRESENCE PATTERNING
+  &gt; TELEMETRY
+  &gt; DISTRIBUTED SENSOR CONCEPTS
+  &gt; EVENT DETECTION
+  &gt; RF ENVIRONMENT BASELINING
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/projects# cat sonar/constraints.txt
+
+CONSTRAINTS
+
+  [01] PASSIVE BY DEFAULT.
+
+  [02] DO NOT INTERFERE WITH OTHER SYSTEMS.
+
+  [03] MINIMIZE RETAINED DATA.
+
+  [04] DO NOT COLLECT CONTENT UNLESS SPECIFICALLY AUTHORIZED.
+
+  [05] RESPECT LEGAL, PRIVACY, AND PROPERTY BOUNDARIES.
+
+  [06] DESIGN FOR LOCAL PROCESSING.
+
+  [07] ASSUME THE SENSOR ITSELF MAY FAIL.
+
+  [08] LOG UNCERTAINTY, NOT JUST EVENTS.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+ARCHITECTURE
+
+             +----------------------+
+             |        SONAR         |
+             |    PASSIVE SENSOR    |
+             +----------+-----------+
+                        |
+                        v
+
+                 [ RF OBSERVATION ]
+
+                        |
+                        v
+
+                 [ LOCAL FILTERING ]
+
+                        |
+                        v
+
+                 [ EVENT / METADATA ]
+
+                        |
+             +----------+----------+
+             |                     |
+             v                     v
+
+        [ LOCAL LOG ]         [ ALERT LOGIC ]
+
+                                   |
+                                   v
+
+                              [ HUMAN ]
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+LONGER-TERM CONCEPT
+
+Multiple authorized sensors may eventually operate as a
+distributed network.
+
+Potential functions include:
+
+  &gt; COMPARING SIGNAL OBSERVATIONS
+  &gt; TELEMETRY RELAY
+  &gt; APPROXIMATE LOCATION ESTIMATION
+  &gt; EVENT CORRELATION
+  &gt; COMMUNITY SENSOR NODES
+
+Nothing here requires the sensors to be chatty.
+
+Quiet machines are often useful machines.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/projects# ./sonar --scan
+
+LISTENING...
+
+...
+
+...
+
+ACTIVITY DETECTED.
+
+IDENTITY: UNKNOWN
+INTENT:   UNKNOWN
+THREAT:   UNKNOWN
+
+ACTION:
+
+DON'T MAKE SHIT UP.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+CURRENT DEVELOPMENT
+
+  [DEV]  SENSOR HARDWARE
+  [DEV]  RF COLLECTION PIPELINE
+  [DEV]  LOCAL EVENT FILTERING
+  [DEV]  BASELINE / CHANGE DETECTION
+  [DEV]  TELEMETRY FORMAT
+  [IDEA] MULTI-NODE CORRELATION
+  [IDEA] OPTIONAL BOOP ALERT
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/projects# ./sonar --identify
+
+ERROR:
+
+SIGNAL OBSERVED.
+PERSON NOT KNOWN.
+
+CORRELATION IS NOT CERTAINTY.
+
+root@snakepit:~/projects# _
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+[ <a href="../projects.html">RETURN TO PROJECTS</a> ]
+[ <a href="../index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~/projects# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    Detection is an observation.
+
+    Identification is a conclusion.
+
+    Try not to confuse the two.
+-->
+
+</body>
+</html>

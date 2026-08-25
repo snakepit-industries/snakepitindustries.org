@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: ASCII Archive</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * archive/ascii.html
+         *
+         * Graphics are optional.
+         * Characters are forever.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                      ASCII ARCHIVE                           |
++--------------------------------------------------------------+
+
+root@snakepit:~/archive# ls -lah ./ascii/
+
+<span class="dim">---------------------------------------------------------------</span>
+
+ARCHIVE STATUS : OPEN
+FILE TYPE      : TEXT
+COLOR DEPTH    : YOUR IMAGINATION
+RENDER ENGINE  : MONOSPACE FONT
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+OVERVIEW
+
+This directory contains ASCII and text-mode artwork produced,
+recovered, collected, or otherwise dragged into the Snakepit.
+
+Potential contents include:
+
+  &gt; LOGOS
+  &gt; BANNERS
+  &gt; TERMINAL ART
+  &gt; SIGNATURES
+  &gt; OLD BBS MATERIAL
+  &gt; RECOVERED TEXT FILES
+  &gt; THINGS THAT SHOULD NEVER HAVE NEEDED PNG
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+CURRENT INDEX
+
+[TXT]  README.txt
+       Archive notes.
+
+[TXT]  No public artifacts indexed yet.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# file ./ascii/*
+
+README.txt: ASCII text
+
+root@snakepit:~/archive# identify ./ascii/*
+
+identify: command not found
+
+root@snakepit:~/archive# echo $REASON
+
+THEY'RE TEXT FILES.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+ARCHIVAL RULES
+
+  [01] PRESERVE ORIGINAL SPACING.
+
+  [02] PRESERVE ORIGINAL LINE BREAKS.
+
+  [03] PRESERVE ORIGINAL FILENAMES WHEN PRACTICAL.
+
+  [04] DO NOT "FIX" ARTIFACTS WITHOUT DOCUMENTING THE CHANGE.
+
+  [05] RAW FILES SHOULD REMAIN RAW.
+
+  [06] IF IT LOOKS WRONG IN A PROPORTIONAL FONT,
+       THAT IS YOUR PROBLEM.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# cat ./ascii/README.txt
+
+ASCII ARCHIVE
+
+Some files in this directory may be newer works.
+
+Others may have been recovered from older media.
+
+Where provenance is known, it will be documented.
+
+Where provenance is unknown, we will say:
+
+UNKNOWN.
+
+This is preferable to making shit up.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+DISPLAY TEST
+
++--------------------------+
+| SNAKEPIT INDUSTRIES      |
+| ASCII SUBSYSTEM          |
+|                          |
+| STATUS: FUNCTIONAL       |
++--------------------------+
+
+If the box above looks terrible:
+
+Congratulations.
+
+Your font has failed a test invented decades ago.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# wc -c philosophy.txt
+
+2 philosophy.txt
+
+root@snakepit:~/archive# cat philosophy.txt
+
+:)
+
+root@snakepit:~/archive# _
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+[ <a href="../archive.html">RETURN TO ARCHIVE</a> ]
+[ <a href="../index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~/archive# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    ASCII requires no graphics card.
+
+    Skill issue successfully removed.
+-->
+
+</body>
+</html>

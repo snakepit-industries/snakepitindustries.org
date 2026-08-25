@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: Articles</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * archive/articles.html
+         *
+         * Long-form thoughts.
+         * Short-form attention spans not included.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                     ARTICLE ARCHIVE                          |
++--------------------------------------------------------------+
+
+root@snakepit:~/archive# ls -lah ./articles/
+
+<span class="dim">---------------------------------------------------------------</span>
+
+ARCHIVE STATUS : OPEN
+ARTICLES       : 0
+PEER REVIEW    : YOUR PROBLEM
+COMMENTS       : DISABLED
+LIKE BUTTON    : ABSENT
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+ABOUT THIS DIRECTORY
+
+Articles may include:
+
+  &gt; COMPUTING
+  &gt; CYBERSECURITY
+  &gt; NETWORKING
+  &gt; RADIO / RF
+  &gt; ELECTRONICS
+  &gt; ARTIFICIAL INTELLIGENCE
+  &gt; HARDWARE
+  &gt; LEGACY SYSTEMS
+  &gt; DIGITAL ARCHAEOLOGY
+  &gt; EXPERIMENTAL PROJECTS
+  &gt; FIELD NOTES
+  &gt; THINGS THAT REQUIRED MORE THAN THREE SENTENCES
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+ARTICLE INDEX
+
+No articles currently published.
+
+This condition is expected to deteriorate.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# cat articles/FORMAT.txt
+
+SUGGESTED ARTICLE FORMAT
+
+TITLE:
+DATE:
+REVISION:
+STATUS:
+
+ABSTRACT
+
+    What is this about?
+
+BACKGROUND
+
+    Why are we doing this?
+
+METHOD
+
+    What did we actually do?
+
+OBSERVATIONS
+
+    What happened?
+
+CONCLUSIONS
+
+    What do we think we learned?
+
+NOTES
+
+    What are we still unsure about?
+
+REFERENCES
+
+    Where appropriate.
+
+ERRATA
+
+    Because being wrong permanently is stupid.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+EDITORIAL POLICY
+
+Facts should be distinguishable from opinions.
+
+Observations should be distinguishable from conclusions.
+
+Sources should be cited when appropriate.
+
+Uncertainty should be admitted when it exists.
+
+Corrections should remain visible.
+
+"I DON'T KNOW" IS A VALID DATA POINT.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# ./publish --article hot_take.txt
+
+VALIDATING...
+
+Sources ............. NONE
+Evidence ............ NONE
+Context ............. NONE
+Confidence .......... ABSOLUTE
+
+ERROR:
+
+THIS APPEARS TO BE THE INTERNET.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+REVISION POLICY
+
+Articles may be updated as new information becomes available.
+
+When substantive changes are made:
+
+  &gt; REVISION NUMBER CHANGES
+  &gt; CHANGE IS DOCUMENTED
+  &gt; PREVIOUS VERSION MAY BE RETAINED
+
+Silently rewriting history is poor version control.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# ./enable-comments
+
+ERROR 404:
+
+VALID REASON NOT FOUND.
+
+root@snakepit:~/archive# ./enable-engagement-metrics
+
+ERROR 418:
+
+I'M STILL A WEBSITE.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+[ <a href="../archive.html">RETURN TO ARCHIVE</a> ]
+[ <a href="../index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~/archive# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    If an article becomes obsolete,
+    leave enough evidence for someone to figure out why.
+
+    Future archaeologists already have enough problems.
+-->
+
+</body>
+</html>

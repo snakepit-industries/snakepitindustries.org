@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: XOPR</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * projects/xopr.html
+         *
+         * WATCHMAN TERMINAL
+         * Unnecessarily dramatic by design.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                           XOPR                               |
++--------------------------------------------------------------+
+
+root@snakepit:~/projects# ./xopr --status
+
+PROJECT        : XOPR
+STATUS         : ACTIVE DEVELOPMENT
+TYPE           : WATCHMAN TERMINAL
+ROLE           : MONITORING / COMMS / DISPLAY NODE
+FORM FACTOR    : REPURPOSED CONSOLE HARDWARE
+BLINKENLIGHTS  : REQUIRED
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+OVERVIEW
+
+XOPR is a persistent monitoring and communications terminal
+built around repurposed hardware.
+
+Its job is simple:
+
+  WATCH.
+  LISTEN.
+  DISPLAY.
+  REPORT.
+
+Preferably while looking like it knows something you don't.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+SYSTEM ROLES
+
+  &gt; NETWORK STATUS
+  &gt; LOCAL SERVICE MONITORING
+  &gt; COMMUNICATIONS
+  &gt; ALERT DISPLAY
+  &gt; OSINT / FLASH REPORT DISPLAY
+  &gt; TERMINAL ACCESS
+  &gt; PASSIVE WATCH FUNCTIONS
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/projects# cat xopr/architecture.txt
+
+             +----------------------+
+             |         XOPR         |
+             |   WATCHMAN TERMINAL  |
+             +----------+-----------+
+                        |
+          +-------------+-------------+
+          |             |             |
+          v             v             v
+
+      [ MONITOR ]   [ COMMS ]     [ DISPLAY ]
+
+       NETWORK       IRC / MSG      ALERTS
+       SERVICES      LOCAL NET      STATUS
+       SENSORS       UPLINK         FLASHREP
+
+                        |
+                        v
+
+                 [ HUMAN OPERATOR ]
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+CURRENT DEVELOPMENT
+
+  [DEV]  PRIMARY TERMINAL INTERFACE
+  [DEV]  STATUS DISPLAY
+  [DEV]  ALERT PIPELINE
+  [DEV]  PRIVATE COMMS
+  [DEV]  FLASHREP INTEGRATION
+  [DEV]  PANEL CONTROLS
+  [DEV]  LIGHTS THAT SERVE NO PRACTICAL PURPOSE
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/projects# ./xopr --diagnostic
+
+INITIALIZING...
+
+NETWORK ............. OK
+DISPLAY ............. OK
+COMMS ............... OK
+WATCHMAN ............ STANDING BY
+RED LIGHTS .......... VERY RED
+
+SYSTEM READY.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/projects# ./xopr --play-game
+
+NEGATIVE.
+
+root@snakepit:~/projects# ./xopr --play-nice
+
+COMMAND NOT FOUND.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+DESIGN NOTES
+
+XOPR is not intended to be invisible.
+
+It is intended to look like a machine that has a job.
+
+Controls should be understandable.
+
+Displays should be readable.
+
+Status should be obvious.
+
+And if a red indicator light can be added without creating
+a new point of failure, the red indicator light is going in.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+[ <a href="../projects.html">RETURN TO PROJECTS</a> ]
+[ <a href="../index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~/projects# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    A strange game.
+
+    The only winning move
+    is to add more indicator lights.
+-->
+
+</body>
+</html>

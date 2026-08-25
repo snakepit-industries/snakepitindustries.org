@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: Lab</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * lab.html
+         *
+         * READ ONLY.
+         * Mostly.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                     LABORATORY NODE                          |
++--------------------------------------------------------------+
+
+root@snakepit:~# ./status --lab
+
+LAB STATUS     : ONLINE
+ACCESS MODE    : READ ONLY
+SAFETY SYSTEMS : ALLEGEDLY FUNCTIONAL
+COFFEE LEVEL   : NOMINAL
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+root@snakepit:~# ls ./lab/
+
+[SYS] COMPUTE
+[NET] NETWORK
+[RF ] RADIO
+[DEV] EMBEDDED
+[PWR] POWER
+[HW ] HARDWARE
+[ARC] LEGACY
+[UNK] MISC
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+COMPUTE
+
+  chezdeelise ............. LOCAL AI HOST
+  kandahar-killer ......... LEGACY COMPUTE NODE
+  nightrider .............. MOBILE NODE
+  xopr .................... WATCHMAN TERMINAL
+
+NETWORK
+
+  snakepit ................ LOCAL NETWORK
+  watchman ................ MONITORING
+  uplink .................. EXTERNAL
+
+RADIO
+
+  SDR ..................... SOFTWARE DEFINED RADIO
+  sub-ghz ................. EXPERIMENTAL
+  antenna systems ......... ACTIVE / IN DEVELOPMENT
+
+EMBEDDED
+
+  raspberry pi ............ MULTIPLE
+  beaglebone .............. AVAILABLE
+  arduino .................. MULTIPLE
+  questionable boards ..... YES
+
+POWER
+
+  bench supplies .......... ONLINE
+  battery systems ......... AVAILABLE
+  solar ................... AVAILABLE
+  extension cords ......... SOMEHOW ALWAYS MISSING
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+root@snakepit:~# uptime
+
+LAB HAS BEEN RECONFIGURED TOO MANY TIMES TO ANSWER THIS QUESTION.
+
+root@snakepit:~# df -h
+
+Filesystem          Size     Used     Avail    Use%
+--------------------------------------------------
+/bench               100%      97%       3%     97%
+/shelves             100%     112%      ???    112%
+/storage             ???       ???       ???     ???
+/desk                 100%     143%      -43%   143%
+
+root@snakepit:~# fsck /desk
+
+WARNING: FILESYSTEM CONTAINS PHYSICAL OBJECTS.
+
+CONTINUE? [y/N] n
+
+Wise choice.
+</pre>
+</section>
+<!-- Please don't ask how the physics work here. They just work. -->
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+LAB RULES
+
+  01. READ THE DATASHEET.
+
+  02. VERIFY POWER BEFORE APPLYING POWER.
+
+  03. BACK UP BEFORE DOING SOMETHING INTERESTING.
+
+  04. LABEL YOUR CABLES.
+
+  05. IF IT'S STUPID, BUT IT WORKS, IT AIN'T STUPID.
+
+  06. YEE-YEE RESPONSIBLY.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~# find /lab -name "that_one_adapter"
+
+find: searching...
+
+find: searching...
+
+find: searching...
+
+ERROR: YOU DEFINITELY SAW IT THREE DAYS AGO.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+[ <a href="index.html">RETURN TO ROOT</a> ]
+[ <a href="projects.html">PROJECT DIRECTORY</a> ]
+
+root@snakepit:~# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    If you came here looking for a clean laboratory,
+    you have misunderstood the nature of research.
+
+    The adapter is probably in a box labeled "MISC."
+    There are seventeen boxes labeled "MISC."
+
+    Good luck.
+-->
+
+</body>
+</html>

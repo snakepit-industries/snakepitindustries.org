@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: Misc</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * archive/misc.html
+         *
+         * Classification failed.
+         * Retention succeeded.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                           MISC                               |
++--------------------------------------------------------------+
+
+root@snakepit:~/archive# ls -lah ./misc/
+
+<span class="dim">---------------------------------------------------------------</span>
+
+ARCHIVE STATUS : OPEN
+CATEGORY       : MISCELLANEOUS
+ORGANIZATION   : TECHNICALLY
+CONTENTS       : YES
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+ABOUT THIS DIRECTORY
+
+This directory contains material which did not fit cleanly
+somewhere else.
+
+Potential contents include:
+
+  &gt; RANDOM NOTES
+  &gt; STRAY FILES
+  &gt; UNCLASSIFIED ARTIFACTS
+  &gt; ONE-OFF EXPERIMENTS
+  &gt; WEIRD MEDIA
+  &gt; PARTIAL RECOVERIES
+  &gt; FILES WITH NO CONTEXT
+  &gt; THINGS FOUND WHILE LOOKING FOR SOMETHING ELSE
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+MISC INDEX
+
+No public entries currently indexed.
+
+This is almost certainly temporary.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# cat misc/CLASSIFICATION.txt
+
+CLASSIFICATION PROCEDURE
+
+Does the file obviously belong somewhere else?
+
+  YES -> PUT IT THERE.
+
+  NO  -> CONTINUE.
+
+Do we know what it is?
+
+  YES -> DOCUMENT IT.
+
+  NO  -> CONTINUE.
+
+Does it seem interesting?
+
+  YES -> KEEP IT.
+
+  NO  -> PROBABLY KEEP IT ANYWAY.
+
+RESULT:
+
+MISC.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+KNOWN FAILURE MODES
+
+  [01] FILE HAS NO EXTENSION.
+
+  [02] FILE HAS WRONG EXTENSION.
+
+  [03] FILE IS CALLED "NEW.TXT."
+
+  [04] FILE IS CALLED "OLD.TXT."
+
+  [05] FILE IS CALLED "STUFF."
+
+  [06] FILE CONTAINS SOMETHING IMPORTANT.
+
+  [07] NOBODY REMEMBERS WHY.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# file misc/unknown.dat
+
+misc/unknown.dat: data
+
+root@snakepit:~/archive# strings misc/unknown.dat | head
+
+hello
+test
+serial
+password
+DO_NOT_DELETE
+banana
+
+root@snakepit:~/archive# echo $VERDICT
+
+ABSOLUTELY NO IDEA.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+RECOVERY NOTES
+
+Files recovered from old media may initially land here when:
+
+  &gt; ORIGINAL PURPOSE IS UNKNOWN
+  &gt; TIMESTAMPS ARE UNRELIABLE
+  &gt; FORMAT IS UNCLEAR
+  &gt; DIRECTORY STRUCTURE IS LOST
+  &gt; CONTEXT IS MISSING
+  &gt; WE GOT DISTRACTED
+
+Items may later be moved into a more specific archive.
+
+Or not.
+
+Entropy also gets a vote.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# ./cleanup misc/
+
+SCANNING...
+
+duplicate_file.txt ........ POSSIBLE DUPLICATE
+old_config.bak ............ PROBABLY IMPORTANT
+untitled.bin .............. UNKNOWN
+notes2.txt ................. VAGUE
+junk/ ...................... SUSPICIOUSLY LARGE
+
+DELETE UNNECESSARY FILES? [y/N] n
+
+WISE.
+
+WE HAVE BEEN HURT BEFORE.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+MISC PHILOSOPHY
+
+Not everything needs a category immediately.
+
+Classification can happen later.
+
+Deletion cannot always be undone.
+
+Storage is cheap.
+
+Regret is expensive.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# find ./misc -type f | wc -l
+
+0
+
+root@snakepit:~/archive# sleep 30
+
+root@snakepit:~/archive# find ./misc -type f | wc -l
+
+417
+
+root@snakepit:~/archive# echo $WHAT_HAPPENED
+
+NORMAL OPERATIONS.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+[ <a href="../archive.html">RETURN TO ARCHIVE</a> ]
+[ <a href="../index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~/archive# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    "Miscellaneous" is not a failure of organization.
+
+    It is a buffer against premature certainty.
+
+    Also we ran out of labels.
+-->
+<!--
+    <marquee> heard someone say smoke
+    and has entered the building.
+
+    Doggone it.
+-->
+</body>
+</html>

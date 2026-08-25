@@ -1,0 +1,114 @@
+SNAKEPIT INDUSTRIES
+CHANGELOG
+
+Building Solutions That Bite.
+
+===============================================================
+REV 0.1
+25 AUG 2026
+===============================================================
+
+STATUS: SYSTEM ONLINE
+
+
+INITIAL WEBSITE STRUCTURE
+
+[+] Created primary site index.
+
+[+] Established amber monochrome terminal interface.
+
+[+] Added system uptime counter using 01 APR 1995 epoch.
+
+[+] Added primary navigation:
+
+    ABOUT
+    PROJECTS
+    LAB
+    ARCHIVE
+    LINKS
+    CONTACT
+
+
+PROJECTS
+
+[+] Added project pages:
+
+    CHEZDEELISE
+    XOPR
+    SONAR
+    WIG FLASHREP
+    NIGHTRIDER
+
+
+ARCHIVE
+
+[+] Added archive structure.
+
+[+] Added archive sections:
+
+    ASCII
+    ARTICLES
+    BUILD LOGS
+    DOCUMENTS
+    HARDWARE
+    MISC
+
+
+SITE FEATURES
+
+[+] Added MESSAGE OF THE DAY.
+
+[+] Added system information block.
+
+[+] Added blinking terminal cursor.
+
+[+] Added 88x31 Snakepit Industries web button.
+
+[+] Added deprecated MARQUEE technology.
+
+    This was intentional.
+
+[+] Established compatibility requirements:
+
+    NETSCAPE NAVIGATOR 3.0
+    800x600
+    256 COLORS
+    28.8K MODEM OR BETTER
+
+[+] Reserved 254 unused colors for future expansion.
+
+
+SOURCE CODE
+
+[+] View Source encouraged.
+
+[+] Easter eggs deployed.
+
+[+] Code formatting discipline compromised.
+
+    This was also intentional.
+
+
+HOSTING
+
+[+] Local testing completed.
+
+[+] All current navigation links verified locally.
+
+[+] Repository prepared for GitHub Pages deployment.
+
+
+KNOWN ISSUES
+
+[ ] Archive currently contains insufficient archaeological debris.
+
+[ ] Several external links remain placeholders.
+
+[ ] Internet continues to contain the Internet.
+
+
+---------------------------------------------------------------
+
+REV 0.1 COMPLETE
+
+root@snakepit:~# _

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: Nightrider</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * projects/nightrider.html
+         *
+         * Small machine.
+         * Big attitude.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                       NIGHTRIDER                             |
++--------------------------------------------------------------+
+
+root@snakepit:~/projects# ./nightrider --status
+
+PROJECT        : NIGHTRIDER
+STATUS         : DEVELOPMENT
+TYPE           : MOBILE COMPUTING NODE
+ROLE           : FIELD / COMMS / UTILITY
+FORM FACTOR    : SMALL
+PORTABILITY    : HIGH
+DRAMA LEVEL    : UNNECESSARILY HIGH
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+OVERVIEW
+
+Nightrider is a compact mobile computing system designed for
+field use.
+
+Primary considerations are:
+
+  &gt; PORTABILITY
+  &gt; CONNECTIVITY
+  &gt; PHYSICAL I/O
+  &gt; RADIO / ANTENNA SUPPORT
+  &gt; LOW POWER REQUIREMENTS
+  &gt; LOCAL NETWORK ACCESS
+  &gt; DURABILITY
+  &gt; CONCEALABILITY
+
+It should be small enough to disappear into a bag.
+
+It should be useful enough to justify bringing it.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+DESIGN PRIORITIES
+
+  [01] SMALL FORM FACTOR.
+
+  [02] REAL PORTS ARE BETTER THAN DONGLES.
+
+  [03] EXTERNAL ANTENNA OPTIONS ARE GOOD.
+
+  [04] BATTERY LIFE MATTERS.
+
+  [05] OFFLINE OPERATION SHOULD REMAIN USEFUL.
+
+  [06] FIELD REPAIR SHOULD BE POSSIBLE.
+
+  [07] THE MACHINE SHOULD NOT REQUIRE A CLOUD ACCOUNT TO BOOT.
+
+  [08] BOOTING SHOULD LOOK RIDICULOUSLY COOL.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/projects# cat nightrider/architecture.txt
+
+             +----------------------+
+             |      NIGHTRIDER      |
+             |     MOBILE NODE      |
+             +----------+-----------+
+                        |
+        +---------------+---------------+
+        |               |               |
+        v               v               v
+
+   [ COMPUTE ]      [ NETWORK ]      [ RADIO ]
+
+      LOCAL OS        ETHERNET         SDR
+      STORAGE         WIFI             ANTENNA
+      TOOLS           LOCAL LAN        TELEMETRY
+      TERMINAL        UPLINK
+
+                        |
+                        v
+
+                  [ FIELD USER ]
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+INTENDED CAPABILITIES
+
+  [DEV]  LOCAL TERMINAL
+  [DEV]  NETWORK DIAGNOSTICS
+  [DEV]  HARDWIRED ETHERNET
+  [DEV]  WIRELESS NETWORKING
+  [DEV]  EXTERNAL ANTENNA SUPPORT
+  [DEV]  SDR SUPPORT
+  [DEV]  LOCAL DOCUMENTATION
+  [DEV]  SECURE STORAGE
+  [DEV]  SNAKEPIT LAN ACCESS
+  [DEV]  FIELD POWER SUPPORT
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/projects# ./nightrider --boot
+
+INITIALIZING MOBILE NODE...
+
+CPU ................. OK
+MEMORY .............. OK
+STORAGE ............. OK
+NETWORK ............. STANDBY
+RADIO ............... STANDBY
+UPLINK .............. OPTIONAL
+
+LOADING INTERFACE...
+
+            NIGHTRIDER@SNAKEPIT
+
+       &lt;=========================&gt;
+
+SYSTEM READY.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+BOOT INTERFACE
+
+The normal wall of startup text may eventually be replaced
+with a dedicated boot display.
+
+Planned elements:
+
+  &gt; NIGHTRIDER@SNAKEPIT
+  &gt; SCROLLING RED STATUS BAR
+  &gt; MINIMAL SYSTEM STATUS
+  &gt; PERIOD-CORRECT AUDIO
+  &gt; TERMINAL HANDOFF
+
+Is any of this necessary?
+
+No.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/projects# ./nightrider --disable-theatrics
+
+ERROR:
+
+OPTION NOT COMPILED.
+
+root@snakepit:~/projects# ./nightrider --reason
+
+BECAUSE WE CAN.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+FIELD DOCTRINE
+
+Carry what is useful.
+
+Know what it does.
+
+Know how to fix it.
+
+Know how to operate without the network.
+
+Don't add equipment merely because there is room in the bag.
+
+Eventually there will no longer be room in the bag.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+[ <a href="../projects.html">RETURN TO PROJECTS</a> ]
+[ <a href="../index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~/projects# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    Yes, the red scanner bar is necessary.
+
+    No further questions will be accepted.
+-->
+
+</body>
+</html>

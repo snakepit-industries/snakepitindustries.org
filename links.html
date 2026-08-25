@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: Links</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * links.html
+         *
+         * The Internet used to be websites linking to websites.
+         * Weird concept, apparently.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 1em;
+            align-items: center;
+        }
+
+        .button-placeholder {
+            width: 88px;
+            height: 31px;
+            border: 1px solid var(--amber-dim);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
+            line-height: 1;
+            text-align: center;
+            color: var(--amber-dim);
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                         LINKS                                |
++--------------------------------------------------------------+
+
+root@snakepit:~# cat bookmarks.txt
+
+<span class="dim">---------------------------------------------------------------</span>
+
+PLACES WORTH VISITING
+
+The Internet is a large place.
+
+Some of it is even useful.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+[ HACKING / SECURITY ]
+
+  [LINK]  Coming soon.
+  [LINK]  Coming soon.
+  [LINK]  Coming soon.
+
+
+[ COMPUTING ]
+
+  [LINK]  Coming soon.
+  [LINK]  Coming soon.
+  [LINK]  Coming soon.
+
+
+[ MAKERS / ELECTRONICS ]
+
+  [LINK]  Coming soon.
+  [LINK]  Coming soon.
+  [LINK]  Coming soon.
+
+
+[ RADIO / RF ]
+
+  [LINK]  Coming soon.
+  [LINK]  Coming soon.
+  [LINK]  Coming soon.
+
+
+[ ARCHIVES / OLD INTERNET ]
+
+  [LINK]  Coming soon.
+  [LINK]  Coming soon.
+  [LINK]  Coming soon.
+
+
+[ FRIENDS OF THE SNAKEPIT ]
+
+  [LINK]  No entries yet.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+LINK POLICY
+
+Links are provided because we found them interesting.
+
+A hyperlink is not an endorsement.
+
+Websites change.
+Domains expire.
+People say dumb shit.
+
+Use your own damn brain.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~# ping internet
+
+PING internet (0.0.0.0):
+
+64 bytes from somewhere: icmp_seq=1 ttl=??? time=too_long
+64 bytes from somewhere: icmp_seq=2 ttl=??? time=probably_dns
+64 bytes from somewhere: icmp_seq=3 ttl=??? time=who_knows
+
+--- internet ping statistics ---
+
+3 packets transmitted
+2 opinions received
+0 facts verified
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+WEB BUTTONS
+
+Because 88x31 was enough pixels.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+<div class="buttons">
+
+    <!--
+        Replace these with actual 88x31 buttons.
+
+        DO NOT MAKE THEM BIGGER.
+
+        Civilization has suffered enough.
+    -->
+<pre>
+LINK TO SNAKEPIT
+
+Want to link here?
+
+Steal the button.
+
+That's what it's for.
+
+  FILE ........ si_button.gif
+  SIZE ........ 88x31
+  FORMAT ...... GIF
+  COLORS ...... ENOUGH
+</pre>
+
+<!-- 
+But mom, I don't want to format code according to conventions! I DON'T **WANT** TO!!!!
+-->
+    
+<div class="button-placeholder">
+    <br>
+ <a href="index.html">
+    <img src="img/si_button.gif"
+  width="88"
+         height="31"
+              alt="Snakepit Industries"
+    border="0">
+                 </a>
+</div>
+    <div class="button-placeholder">88x31<br>RESERVED</div>
+    <div class="button-placeholder">88x31<br>RESERVED</div>
+    <div class="button-placeholder">88x31<br>RESERVED</div>
+
+</div>
+</section>
+<!--
+    Yes, border="0" is obsolete.
+
+    So is Netscape Navigator 3.0.
+
+    Mind your business.
+-->
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+root@snakepit:~# curl social-media
+
+ERROR 418:
+
+I'M A WEBSITE.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+[ <a href="index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    If you own a website:
+
+    Link to other websites.
+
+    That's how this shit used to work.
+-->
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: Projects</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * projects.html
+         *
+         * Build. Break. Learn. Repeat.
+         * Keep it weird.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .status {
+            display: inline-block;
+            min-width: 9ch;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                     PROJECT DIRECTORY                        |
++--------------------------------------------------------------+
+
+root@snakepit:~# ls -la ./projects/
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+<span class="status">[ACTIVE]</span> <a href="projects/chezdeelise.html">CHEZDEELISE</a>
+          Local AI / BuilderOS development environment.
+
+          Offline-first artificial intelligence, local services,
+          hardware integration, and experimental human-machine
+          interaction.
+
+
+<span class="status">[ACTIVE]</span> <a href="projects/xopr.html">XOPR</a>
+          Watchman terminal.
+
+          Repurposed hardware, persistent monitoring, network
+          services, communications, and unnecessarily dramatic
+          blinking lights.
+
+
+<span class="status">[DEV]</span>    <a href="projects/sonar.html">SONAR</a>
+          RF situational awareness.
+
+          Passive radio-frequency observation, telemetry,
+          experimentation, and distributed sensor concepts.
+
+
+<span class="status">[DEV]</span>    <a href="projects/flashrep.html">WIG FLASHREP</a>
+          OSINT reporting system.
+
+          Public-source information collection, validation,
+          event detection, and rapid reporting experiments.
+
+
+<span class="status">[DEV]</span>    <a href="projects/nightrider.html">NIGHTRIDER</a>
+          Mobile computing node.
+
+          Small-form-factor field system emphasizing portability,
+          communications, utility, and entirely unnecessary
+          boot-sequence theatrics.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+5 PROJECTS FOUND.
+0 DOCUMENTATION COMPLETE.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~# cat README
+
+STATUS FLAGS:
+
+  [ACTIVE]  SYSTEM CURRENTLY OPERATIONAL OR UNDER ACTIVE BUILD
+  [DEV]     DEVELOPMENT / EXPERIMENTAL
+  [HOLD]    TEMPORARILY SHELVED
+  [???]     WE AREN'T ENTIRELY SURE EITHER
+
+WARNING:
+
+Projects documented here may change without notice.
+
+Some projects may disappear.
+
+Others may multiply.
+
+This is normal.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+[ <a href="index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    Documentation is what happens
+    when the experiment finally stops working.
+
+    Probably.
+-->
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakepit Industries :: Build Logs</title>
+
+    <style>
+        /*
+         * SNAKEPIT INDUSTRIES
+         * archive/buildlogs.html
+         *
+         * If it worked the first time,
+         * check your work.
+         */
+
+        :root {
+            --amber: #ffb000;
+            --amber-dim: #9a6a00;
+            --black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--black);
+            color: var(--amber);
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: inherit;
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--black);
+            background: var(--amber);
+            outline: none;
+        }
+
+        .dim {
+            color: var(--amber-dim);
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.65em;
+            height: 1em;
+            vertical-align: -0.15em;
+            background: var(--amber);
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="terminal">
+
+<pre>
++--------------------------------------------------------------+
+|                  SNAKEPIT INDUSTRIES                         |
+|                       BUILD LOGS                             |
++--------------------------------------------------------------+
+
+root@snakepit:~/archive# ls -lah ./buildlogs/
+
+<span class="dim">---------------------------------------------------------------</span>
+
+ARCHIVE STATUS : OPEN
+ACTIVE LOGS    : 0
+FAILED BUILDS  : CLASSIFIED AS "LEARNING"
+MAGIC SMOKE    : CURRENTLY CONTAINED
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+
+
+<section class="section">
+<pre>
+ABOUT THIS DIRECTORY
+
+Build logs document the actual development process.
+
+Not merely what eventually worked.
+
+Expect:
+
+  &gt; INITIAL CONCEPTS
+  &gt; HARDWARE CONFIGURATIONS
+  &gt; SOFTWARE REVISIONS
+  &gt; TEST RESULTS
+  &gt; FAILURES
+  &gt; REPAIRS
+  &gt; MODIFICATIONS
+  &gt; LESSONS LEARNED
+  &gt; THINGS WE SHOULD HAVE READ BEFORE STARTING
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+BUILD LOG INDEX
+
+No public build logs currently indexed.
+
+Future logs may include:
+
+  [DEV] CHEZDEELISE
+  [DEV] XOPR
+  [DEV] SONAR
+  [DEV] NIGHTRIDER
+  [DEV] LAB INFRASTRUCTURE
+  [DEV] HARDWARE RESTORATION
+  [DEV] MISCELLANEOUS BAD IDEAS
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# cat buildlogs/FORMAT.txt
+
+BUILD LOG FORMAT
+
+PROJECT:
+DATE:
+REVISION:
+STATUS:
+
+OBJECTIVE
+
+    What are we trying to accomplish?
+
+CONFIGURATION
+
+    What hardware / software are we using?
+
+PROCEDURE
+
+    What did we do?
+
+RESULT
+
+    What actually happened?
+
+FAILURES
+
+    What did not happen according to plan?
+
+CAUSE
+
+    What do we think caused it?
+
+LESSONS
+
+    What did we learn?
+
+NEXT ACTION
+
+    What are we doing differently next time?
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+root@snakepit:~/archive# ./build --project test
+
+BUILD STARTED...
+
+OBJECTIVE ............ MAKE THING WORK
+CONFIGURATION ........ QUESTIONABLE
+DOCUMENTATION ........ SKIMMED
+CONFIDENCE ........... HIGH
+
+TESTING...
+
+RESULT ............... THING DID NOT WORK
+DAMAGE ............... MINIMAL
+LESSON ............... EXPENSIVE
+
+NEXT ACTION:
+
+READ THE DAMN DATASHEET.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+FAILURE CLASSIFICATION
+
+  [F0]  EXPECTED FAILURE
+        Normal experimentation.
+
+  [F1]  CONFIGURATION ERROR
+        The machine did exactly what we told it to do.
+
+  [F2]  HARDWARE FAILURE
+        Component no longer wishes to participate.
+
+  [F3]  SOFTWARE FAILURE
+        Works on somebody else's machine.
+
+  [F4]  OPERATOR ERROR
+        Problem located between chair and keyboard.
+
+  [F5]  MAGIC SMOKE EVENT
+        Investigation required.
+
+  [F?]  UNEXPLAINED
+        Interesting.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# ./diagnose --failure F4
+
+ANALYZING...
+
+USER ................. PRESENT
+MANUAL ................ PRESENT
+MANUAL READ ........... NO
+
+CAUSE IDENTIFIED.
+
+root@snakepit:~/archive# _
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+BUILD PHILOSOPHY
+
+Failure is data.
+
+Successful failures teach something.
+
+Unsuccessful failures merely make a mess.
+
+Record both.
+
+A working prototype without notes is a future mystery.
+
+A broken prototype with good notes is research.
+
+<span class="dim">---------------------------------------------------------------</span>
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+root@snakepit:~/archive# ./release --version final
+
+ERROR:
+
+INVALID VERSION NAME.
+
+root@snakepit:~/archive# ./release --version final_REAL
+
+ERROR:
+
+WE HAVE BEEN THROUGH THIS.
+</pre>
+</section>
+
+
+<section class="section">
+<pre>
+<span class="dim">---------------------------------------------------------------</span>
+
+[ <a href="../archive.html">RETURN TO ARCHIVE</a> ]
+[ <a href="../index.html">RETURN TO ROOT</a> ]
+
+root@snakepit:~/archive# <span class="cursor"></span>
+</pre>
+</section>
+
+</main>
+
+
+<!--
+    Failure is data.
+
+    Smoke is also data.
+
+    Smoke is generally more expensive data.
+-->
+
+</body>
+</html>
