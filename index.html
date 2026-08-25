@@ -206,6 +206,21 @@ CURRENT PROJECTS
 
     Lynx users already know what they're doing.
 -->
+<script>
+window.addEventListener("load", function () {
+    const nav = performance.getEntriesByType("navigation")[0];
+
+    if (nav) {
+        document.getElementById("load-time").textContent =
+            Math.round(nav.duration) + " ms";
+    }
+});
+</script>
+<!-- 
+What is that over there?
+Is that a stretch?
+	No friend, that's a FLEX.
+-->
 <section class="section">
 <pre>
 SITE INFORMATION
@@ -220,6 +235,7 @@ SITE INFORMATION
   RESOLUTION .............. 800x600
   COLOR DEPTH ............. 256 COLORS
   MODEM ................... 28.8K OR BETTER
+  PAGE LOAD TIME .......... <span id="load-time">CALCULATING</span>
 
 <span class="dim">---------------------------------------------------------------</span>
 <!--
